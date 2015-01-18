@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="ngGitApp">
+<head>
+    <title></title>
+    <script src="Scripts/angular.js"></script>
+    <script src="App/ngGitApp.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="App/nggetgit.js"></script>
+</head>
+    <body ng-controller="ngGitController" class="panel-body">
+        <h2>{{message}}</h2>
+        <ng-git></ng-git>
+        
+        
+        <div ng-show="showTableData==true">
+            <ng-git-repos></ng-git-repos>
+        </div>
+        
+       </body>
+</html>

@@ -1,0 +1,6 @@
+c:\users\epyon\documents\visual studio 2013\Projects\ngGit\ngGit\bin\ngGit.dll.config
+c:\users\epyon\documents\visual studio 2013\Projects\ngGit\ngGit\bin\ngGit.dll
+c:\users\epyon\documents\visual studio 2013\Projects\ngGit\ngGit\bin\ngGit.pdb
+c:\users\epyon\documents\visual studio 2013\Projects\ngGit\ngGit\obj\Debug\ngGit.csprojResolveAssemblyReference.cache
+c:\users\epyon\documents\visual studio 2013\Projects\ngGit\ngGit\obj\Debug\ngGit.dll
+c:\users\epyon\documents\visual studio 2013\Projects\ngGit\ngGit\obj\Debug\ngGit.pdb
