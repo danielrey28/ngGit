@@ -6,15 +6,96 @@
     <script src="App/ngGitApp.js"></script>
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <script src="App/nggetgit.js"></script>
+    <link href="Content/freelancer.css" rel="stylesheet" />
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
-    <body ng-controller="ngGitController" class="panel-body">
-        <h2>{{message}}</h2>
-        <ng-git></ng-git>
-        
-        
-        <div ng-show="showTableData==true">
-            <ng-git-repos></ng-git-repos>
+<body ng-controller="ngGitController" class="index" id="page-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Github Search</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#search">Search</a>
+                    </li>
+               </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        
-       </body>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-text">
+                        <span class="name">GITHUB Search</span>
+                        <hr class="star-light">
+                        <span class="skills">Quickly Search Github Users</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Search Section -->
+    <section id="search">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Start Typing Below</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <ng-git></ng-git>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Results Section -->
+    <section ng-show="showTableData">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Results for {{gitName.name}}</h2>
+                    <img src="{{user.avatar_url}}" width="140" height="140" alt="{{user.name}}" />
+                </div>
+            </div>
+            <div class="row">
+                <ng-git-repos></ng-git-repos>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Github Search 2015
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
 </html>

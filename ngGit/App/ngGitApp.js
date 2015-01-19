@@ -45,7 +45,7 @@ app.controller('ngGitController', function($scope, $http, $timeout) {
 app.directive('ngGit', function() {
     return {
         retrict: 'E',
-        template: '<div class="col-sm-3">Enter a GitHub Username: <input class="form-control" type="text" ng-model="gitName.name"><label class="label label-danger" ng-show="showError">{{errorLabel}}</label></div>'
+        template: '<div class="text-center"><input class="form-control" type="text" ng-model="gitName.name"><label class="label label-danger" ng-show="showError">{{errorLabel}}</label></div>'
     };
 });
 
